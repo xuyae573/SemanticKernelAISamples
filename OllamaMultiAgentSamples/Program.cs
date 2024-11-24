@@ -1,8 +1,5 @@
-﻿//using Microsoft.Extensions.AI;
-using Microsoft.Extensions.AI;
-using Microsoft.SemanticKernel;
+﻿using Microsoft.SemanticKernel;
 using Microsoft.SemanticKernel.ChatCompletion;
-using Microsoft.SemanticKernel.Connectors.Ollama;
 using OllamaSharp;
 using OllamaSharp.Models.Chat;
 
@@ -12,22 +9,6 @@ namespace AISampleApp
     {
         public static async Task Main(string[] args)
         {
-            //IEmbeddingGenerator<string, Embedding<float>> generator =
-            //    new OllamaEmbeddingGenerator(new Uri("http://localhost:11434/"), "mxbai-embed-large");
-
-            //var embedding = await generator.GenerateEmbeddingAsync(  "What is AI " );
-
-            //Console.WriteLine(string.Join(", ", embedding.Vector.ToArray()));
-
-
-            //IChatClient client = new OllamaChatClient(new Uri("http://localhost:11434/"), "llama3");
-
-            //var res = await client.CompleteAsync(
-            //[
-            //    new ChatMessage(ChatRole.System, "You are a helpful AI assistant"),
-            //    new ChatMessage(ChatRole.User, "What is AI?"),
-            //]);
-
 #pragma warning disable SKEXP0001
 
             using var ollamaClient = new OllamaApiClient(
@@ -46,7 +27,7 @@ namespace AISampleApp
                 async history => await CreativeAgent(aiChatService, history)
             };
 
-            Console.WriteLine("Multi-Agent Chat System");
+            Console.WriteLine("Multi-Agent Chat System with Ollama");
             Console.WriteLine("Type 'Quit' to exit.");
             Console.WriteLine();
 

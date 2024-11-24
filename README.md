@@ -172,6 +172,14 @@ public class CustomChatCompletionService
 
 ---
 
+## Reference Projects
+1. OllamaSharp
+2. Microsoft.SemanticKernel
+3. Microsoft.SemanticKernel.Connectors.Ollama
+
+---
+
+
 ## License
 
 This project is licensed under the MIT License. See the `LICENSE` file for details.

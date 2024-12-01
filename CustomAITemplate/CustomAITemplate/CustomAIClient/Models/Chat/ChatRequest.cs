@@ -1,5 +1,6 @@
 ﻿namespace CustomAITemplate.CustomAIClient.Models.Chat
-{
+{   
+    //adjust it based on the api request format 
     public class ChatRequest : CustomAiRequest
     {
         public ChatRequest(string userContent)

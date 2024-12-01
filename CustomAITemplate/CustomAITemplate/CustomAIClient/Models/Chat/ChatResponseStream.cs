@@ -28,6 +28,9 @@ namespace CustomAITemplate.CustomAIClient.Models.Chat
             }
         }
 
+        [JsonPropertyName("delta_answer")]
+        public string DeltaAnswer { get; set; }
+
         /// <summary>
         /// Gets or sets the time the response was generated.
         /// </summary>

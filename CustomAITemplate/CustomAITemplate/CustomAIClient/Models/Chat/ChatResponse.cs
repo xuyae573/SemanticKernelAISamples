@@ -1,6 +1,6 @@
 ﻿namespace CustomAITemplate.CustomAIClient.Models.Chat
 {
-    //Depends on the AI Model you are using
+    //adjust it based on the api response 
     public class ChatResponse
     {
         public ChatResponse() { }

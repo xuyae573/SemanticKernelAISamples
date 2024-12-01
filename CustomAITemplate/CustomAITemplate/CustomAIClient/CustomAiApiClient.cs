@@ -119,9 +119,7 @@ namespace CustomAITemplate.CustomAIClient
             {
                 string json = await reader.ReadLineAsync();
                 TResponse chatResponseStream = JsonSerializer.Deserialize<TResponse>(json, IncomingJsonSerializerOptions);
-                yield return chatResponseStream != null && chatResponseStream.Done
-                    ? JsonSerializer.Deserialize<ChatDoneResponseStream>(json, IncomingJsonSerializerOptions) as TResponse
-                    : chatResponseStream;
+                yield return chatResponseStream;
             }
         }
 

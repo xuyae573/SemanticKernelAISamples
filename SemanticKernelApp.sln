@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomChatCompletionSample"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomAITemplate", "CustomAITemplate\CustomAITemplate\CustomAITemplate.csproj", "{08D21D34-13C9-4476-96FF-70F59B84A321}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "xAI", "xAI", "{DDF3FB94-5F44-410A-B797-021E09FD63DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAISample", "XAISample\XAISample.csproj", "{8DBD30C9-7746-422F-81CB-B9FE2D645A7E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,8 +31,15 @@ Global
 		{08D21D34-13C9-4476-96FF-70F59B84A321}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08D21D34-13C9-4476-96FF-70F59B84A321}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08D21D34-13C9-4476-96FF-70F59B84A321}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DBD30C9-7746-422F-81CB-B9FE2D645A7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DBD30C9-7746-422F-81CB-B9FE2D645A7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DBD30C9-7746-422F-81CB-B9FE2D645A7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DBD30C9-7746-422F-81CB-B9FE2D645A7E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8DBD30C9-7746-422F-81CB-B9FE2D645A7E} = {DDF3FB94-5F44-410A-B797-021E09FD63DF}
 	EndGlobalSection
 EndGlobal

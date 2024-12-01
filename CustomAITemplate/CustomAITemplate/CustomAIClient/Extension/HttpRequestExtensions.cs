@@ -1,6 +1,6 @@
 ﻿using System.Net.Http.Headers;
 
-namespace CustomChatCompletionSample.CustomAIClient.Extension
+namespace CustomAITemplate.CustomAIClient.Extension
 {
     internal static class HttpRequestExtensions
     {

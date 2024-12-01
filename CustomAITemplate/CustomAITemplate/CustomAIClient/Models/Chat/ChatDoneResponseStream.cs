@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace CustomChatCompletionSample.CustomAIClient.Models.Chat
+namespace CustomAITemplate.CustomAIClient.Models.Chat
 {
     public class ChatDoneResponseStream: ChatResponseStream
     {

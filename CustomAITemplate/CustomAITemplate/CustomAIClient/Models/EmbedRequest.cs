@@ -5,16 +5,10 @@ using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
-namespace CustomChatCompletionSample.CustomAIClient.Models
+namespace CustomAITemplate.CustomAIClient.Models
 {
     public class EmbedRequest : CustomAiRequest
     {
-        /// <summary>
-        /// The name of the model to generate embeddings from
-        /// </summary>
-        [JsonPropertyName("model")]
-        public string Model { get; set; } = null!;
-
         /// <summary>
         /// The text to generate embeddings for
         /// </summary>

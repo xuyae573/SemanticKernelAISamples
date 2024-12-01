@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OllamaMultiAgentSamples", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomChatCompletionSample", "CustomChatCompletionSample\CustomChatCompletionSample.csproj", "{EA4F6B27-A5A7-453E-8529-5F07351BC4F4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomAITemplate", "CustomAITemplate\CustomAITemplate\CustomAITemplate.csproj", "{08D21D34-13C9-4476-96FF-70F59B84A321}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{EA4F6B27-A5A7-453E-8529-5F07351BC4F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA4F6B27-A5A7-453E-8529-5F07351BC4F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA4F6B27-A5A7-453E-8529-5F07351BC4F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08D21D34-13C9-4476-96FF-70F59B84A321}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08D21D34-13C9-4476-96FF-70F59B84A321}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08D21D34-13C9-4476-96FF-70F59B84A321}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08D21D34-13C9-4476-96FF-70F59B84A321}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

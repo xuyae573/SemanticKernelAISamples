@@ -1,16 +1,11 @@
-﻿using CustomChatCompletionSample.CustomAIClient.Models;
-using CustomChatCompletionSample.CustomAIClient.Models.Chat;
+﻿using CustomAITemplate.CustomAIClient.Models;
+using CustomAITemplate.CustomAIClient.Models.Chat;
 using System.Runtime.CompilerServices;
 
-namespace CustomChatCompletionSample.CustomAIClient
+namespace CustomAITemplate.CustomAIClient
 {
     public interface ICustomAiApiClient
     {
-        //
-        // Summary:
-        //     Gets or sets the name of the model to run requests on.
-        string SelectedModel { get; set; }
-
         //
         // Summary:
         //     Sends a request to the /api/chat endpoint and streams the response of the chat.
@@ -70,14 +65,5 @@ namespace CustomChatCompletionSample.CustomAIClient
         //   cancellationToken:
         //     The token to cancel the operation with
         Task<EmbedResponse> Embed(EmbedRequest request, CancellationToken cancellationToken = default(CancellationToken));
-
-        //
-        // Summary:
-        //     Get the version of your AI Model
-        //
-        // Parameters:
-        //   cancellationToken:
-        //     The token to cancel the operation with
-        Task<Version> GetVersion(CancellationToken cancellationToken = default(CancellationToken));
     }
 }

@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace CustomChatCompletionSample.CustomAIClient.Models
+namespace CustomAITemplate.CustomAIClient.Models
 {
     public class Model
     {

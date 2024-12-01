@@ -4,9 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CustomChatCompletionSample.CustomAIClient.Models
+namespace CustomAITemplate.CustomAIClient.Models
 {
-    public class EmbedResponse
-    {
-    }
+    public record class Message(string Role, string Content);
 }

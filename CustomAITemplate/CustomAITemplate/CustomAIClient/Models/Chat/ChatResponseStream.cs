@@ -1,8 +1,8 @@
-﻿using Microsoft.SemanticKernel;
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
 
-namespace CustomChatCompletionSample.CustomAIClient.Models.Chat
+namespace CustomAITemplate.CustomAIClient.Models.Chat
 {
+    //adjust it based on the api response 
     public class ChatResponseStream
     {
         private DateTimeOffset? _createdAt = null!;
@@ -42,11 +42,6 @@ namespace CustomChatCompletionSample.CustomAIClient.Models.Chat
             }
         }
 
-        /// <summary>
-        /// Gets or sets the message returned by the model.
-        /// </summary>
-        [JsonPropertyName("message")]
-        public ChatMessageContent Message { get; set; } = null!;
 
         /// <summary>
         /// Gets or sets a value indicating whether the response is complete.
